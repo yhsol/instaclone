@@ -18,3 +18,8 @@ instagram clone projects
 - Upload a photo
 - Edit the photo (Delete)
 - See the feed
+
+## Questions
+
+- how to server restart? (to resolve "Error: listen EADDRINUSE: address already in use" error!)
+- where to typing node command? in vscode propmt and cmd, it's not work.
