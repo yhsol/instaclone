@@ -2,6 +2,11 @@
 
 instagram clone projects
 
+## use
+
+- HTTP HEADERS
+  - {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNqdjd2dHpjNW13OGYwYjMwb2UyaHVxODAiLCJpYXQiOjE1NTcxMzc5MjJ9.3rOPPWsmDfTGrAfA6pb8uoRaQBUxIgTsjSrPMJsGihU"}
+
 ## User
 
 - create account

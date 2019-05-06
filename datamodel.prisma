@@ -16,7 +16,7 @@ type User {
 
 type Post {
   id: ID! @id
-  file: [File!]!
+  files: [File!]!
   location: String
   caption: String!
   like: [Like!]!
