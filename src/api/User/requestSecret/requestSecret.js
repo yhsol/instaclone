@@ -3,7 +3,7 @@ import { prisma } from "../../../../generated/prisma-client";
 
 export default {
   Mutation: {
-    requestSecret: async (__, args, { request }) => {
+    requestSecret: async (_, args, { request }) => {
       const { email } = args;
       const loginSecret = generateSecret();
       try {
