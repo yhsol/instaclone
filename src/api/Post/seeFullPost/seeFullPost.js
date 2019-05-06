@@ -6,9 +6,9 @@ export default {
     seeFullPost: async (_, args) => {
       const { id } = args;
       const post = await prisma.post({ id });
-      const comments = await prisma
+      const comment = await prisma
         .post({ id })
-        .comments()
+        .comment()
         .$fragment(COMMENT_FRAGMENT);
       const likeCount = await prisma
         .likesConnection({
@@ -18,7 +18,7 @@ export default {
         .count();
       return {
         post,
-        comments,
+        comment,
         likeCount
       };
     }

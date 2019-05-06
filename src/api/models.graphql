@@ -4,24 +4,27 @@ type User {
   email: String!
   firstName: String
   lastName: String
+  fullName: String
+  amIFollowing: Boolean!
   bio: String
   following: [User!]!
-  followers: [User!]!
+  follower: [User!]!
   post: [Post!]!
-  likes: [Like!]!
-  commnets: [Comment!]!
-  rooms: [Room!]!
+  like: [Like!]!
+  comment: [Comment!]!
+  room: [Room!]!
   loginSecret: String
 }
 
 type Post {
   id: ID!
-  files: [File!]!
   location: String
   caption: String!
-  likes: [Like!]!
-  comments: [Comment!]!
   user: User!
+  file: [File!]!
+  like: [Like!]!
+  comment: [Comment!]!
+  isLiked: Boolean!
 }
 
 type Like {
@@ -45,7 +48,7 @@ type File {
 
 type Room {
   id: ID!
-  participants: [User!]!
+  participant: [User!]!
   message: [Message!]!
 }
 

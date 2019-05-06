@@ -6,21 +6,21 @@ type User {
   lastName: String @default(value: "")
   bio: String
   following: [User!]! @relation(name: "FollowRelation")
-  followers: [User!]! @relation(name: "FollowRelation")
+  follower: [User!]! @relation(name: "FollowRelation")
   post: [Post!]!
-  likes: [Like!]!
-  commnets: [Comment!]!
-  rooms: [Room!]!
+  like: [Like!]!
+  comment: [Comment!]!
+  room: [Room!]!
   loginSecret: String
 }
 
 type Post {
   id: ID! @id
-  files: [File!]!
+  file: [File!]!
   location: String
   caption: String!
-  likes: [Like!]!
-  comments: [Comment!]!
+  like: [Like!]!
+  comment: [Comment!]!
   user: User!
 }
 
@@ -45,7 +45,7 @@ type File {
 
 type Room {
   id: ID! @id
-  participants: [User!]!
+  participant: [User!]!
   message: [Message!]!
 }
 
