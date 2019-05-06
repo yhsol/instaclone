@@ -23,3 +23,5 @@ instagram clone projects
 
 - how to server restart? (to resolve "Error: listen EADDRINUSE: address already in use" error!)
 - where to typing node command? in vscode propmt and cmd, it's not work.
+- it's maybe need command for window
+- and fint what server and that PID and delete that task
