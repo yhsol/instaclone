@@ -8,7 +8,7 @@ export default {
       const post = await prisma.post({ id });
       const comment = await prisma
         .post({ id })
-        .comment()
+        .comments()
         .$fragment(COMMENT_FRAGMENT);
       const likeCount = await prisma
         .likesConnection({
@@ -28,3 +28,6 @@ export default {
     }
   }
 };
+
+// files 를 조회할 때 comment 부분 코드가 에러 남. comment 코드 없이 하면 잘 작동 됨.
+// comment 호출 시 comment() 가 아니라 comments() 여야 된다. prisma 에 설정되어 있는 값인 듯.
