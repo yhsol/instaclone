@@ -6,11 +6,11 @@ type User {
   lastName: String @default(value: "")
   bio: String
   following: [User!]! @relation(name: "FollowRelation")
-  follower: [User!]! @relation(name: "FollowRelation")
+  followers: [User!]! @relation(name: "FollowRelation")
   post: [Post!]! @relation(name: "PostToUser", onDelete: CASCADE)
-  like: [Like!]! @relation(name: "LikeToUser", onDelete: CASCADE)
-  comment: [Comment!]! @relation(name: "CommentToUser", onDelete: CASCADE)
-  room: [Room!]!
+  likes: [Like!]! @relation(name: "LikeToUser", onDelete: CASCADE)
+  commnets: [Comment!]! @relation(name: "CommentToUser", onDelete: CASCADE)
+  rooms: [Room!]!
   loginSecret: String
 }
 
@@ -18,9 +18,9 @@ type Post {
   id: ID! @id
   files: [File!]! @relation(name: "FileToPost", onDelete: CASCADE)
   location: String
-  caption: String
-  like: [Like!]! @relation(name: "PostToLike", onDelete: CASCADE)
-  comment: [Comment!]! @relation(name: "CommentToPost", onDelete: CASCADE)
+  caption: String!
+  likes: [Like!]! @relation(name: "PostToLike", onDelete: CASCADE)
+  comments: [Comment!]! @relation(name: "CommentToPost", onDelete: CASCADE)
   user: User @relation(name: "PostToUser")
 }
 
@@ -45,14 +45,14 @@ type File {
 
 type Room {
   id: ID! @id
-  participant: [User!]!
+  participants: [User!]!
   message: [Message!]!
 }
 
 type Message {
   id: ID! @id
   text: String!
-  from: User! @relation(name: "From")
-  to: User! @relation(name: "To")
+  from: User @relation(name: "From")
+  to: User @relation(name: "To")
   room: Room!
 }
