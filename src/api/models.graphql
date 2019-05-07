@@ -26,6 +26,7 @@ type Post {
   like: [Like!]!
   comment: [Comment!]!
   isLiked: Boolean!
+  likeCount: Int!
 }
 
 type Like {
