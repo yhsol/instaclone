@@ -1,7 +1,11 @@
 import { prisma } from "../../../generated/prisma-client";
+import { parseNamedType } from "graphql/language/parser";
 
 export default {
   Post: {
+    files: ({ id }) => prisma.post({ id }).files(),
+    comment: ({ id }) => prisma.post({ id }).comments(),
+    user: ({ id }) => prisma.post({ id }).user(),
     isLiked: async (parent, _, { request }) => {
       const { user } = request;
       const { id } = parent;
