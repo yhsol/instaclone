@@ -5,7 +5,10 @@ instagram clone projects
 ## use
 
 - HTTP HEADERS
+
   - {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNqdjd2dHpjNW13OGYwYjMwb2UyaHVxODAiLCJpYXQiOjE1NTcxMzc5MjJ9.3rOPPWsmDfTGrAfA6pb8uoRaQBUxIgTsjSrPMJsGihU"}
+
+- console.log() 를 찍고, playground 에서 실행 한 뒤에 console 에 log 가 찍히는 것.
 
 ## User
 
