@@ -13,6 +13,9 @@ type User {
   commnets: [Comment!]! @relation(name: "CommentToUser", onDelete: CASCADE)
   rooms: [Room!]!
   loginSecret: String
+  postsCount: String
+  followingCount: String
+  followersCount: String
 }
 
 type Post {

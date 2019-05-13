@@ -16,6 +16,9 @@ type User {
   comment: [Comment!]!
   room: [Room!]!
   loginSecret: String
+  postsCount: String
+  followingCount: String
+  followersCount: String
 }
 
 type Post {
@@ -75,9 +78,9 @@ type Message {
   updatedAt: String
 }
 
-type UserProfile {
-  user: User!
-  post: [Post!]!
-  createdAt: String
-  updatedAt: String
-}
+# type UserProfile {
+#   user: User
+#   post: [Post!]!
+#   createdAt: String
+#   updatedAt: String
+# }
