@@ -19,6 +19,8 @@ type User {
   postsCount: String
   followingCount: String
   followersCount: String
+  createdAt: String
+  updatedAt: String
 }
 
 type Post {

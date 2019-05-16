@@ -11,6 +11,9 @@ instagram clone projects
 - console.log() 를 찍고, playground 에서 실행 한 뒤에 console 에 log 가 찍히는 것.
 - 주석처리한 UserProfile, User 의 computed 파일 확인.
 
+- log in
+  - playground -> request secret -> comfirm secret -> log in!
+
 ## User
 
 - create account
