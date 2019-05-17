@@ -4,10 +4,11 @@ export default {
   Mutation: {
     uploading: async (_, args, { request, isAuthenticated }) => {
       isAuthenticated(request);
-      const { caption, files } = args;
+      const { caption, location, files } = args;
       const { user } = request;
       const post = await prisma.createPost({
         caption,
+        location,
         user: { connect: { id: user.id } }
       });
       files.forEach(

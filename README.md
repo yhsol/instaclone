@@ -12,7 +12,11 @@ instagram clone projects
 - 주석처리한 UserProfile, User 의 computed 파일 확인.
 
 - log in
+
   - playground -> request secret -> comfirm secret -> log in!
+
+  - deploy -f
+    - prisma deploy -f 가 필요할 때가 있는데 지금 파일에서는 yarn prisma 를 지정해뒀기 때문에 yarn deploy -f 를 쓰면 된다.
 
 ## User
 
