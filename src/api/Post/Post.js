@@ -6,7 +6,7 @@ export default {
     files: ({ id }) => prisma.post({ id }).files(),
     comment: ({ id }) => prisma.post({ id }).comments(),
     user: ({ id }) => prisma.post({ id }).user(),
-    isLiked: async (parent, _, { request }) => {
+    isLiked: (parent, _, { request }) => {
       const { user } = request;
       const { id } = parent;
       return prisma.$exists.like({
