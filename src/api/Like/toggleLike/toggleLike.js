@@ -34,7 +34,7 @@ export default {
             },
             post: {
               connect: {
-                id: post.id
+                id: postId
               }
             }
           });
