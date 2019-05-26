@@ -2,6 +2,12 @@
 
 instagram clone projects
 
+## learn
+
+- data 의 이름을 규칙을 마려해서 작성하는 것이 좋겠다. 그 이름이 front-end 작업과도 연결되므로 명확한 규칙이 있다면 조금 더 쉽고, 혼란없이 작업할 수 있겠다.
+- 초기 datamodel 의 작성 신중히 할 필요.
+- graphQl 에 대한 이해 증진, prisma 의 활용 방법에 대한 공부 필요.
+
 ## use
 
 - HTTP HEADERS
